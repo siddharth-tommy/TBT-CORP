@@ -18,7 +18,8 @@ body {
 html {
     scroll-behavior: smooth;
     margin-right: 0;
-    margin-left: 0
+    margin-left: 0;
+    transition: 3s;
 }
 
 button:focus {
@@ -104,21 +105,12 @@ ul li a:hover {
         font-size: 20px;
 
     }
-    .logo-a{
-        width: 9%
-    }
-    .logo-b{
-        width: 2%
-    }
-    .logo-c{
-        width: 50%
-    }
-    .second-ques{
+    /* .second-ques{
         margin-left:9%
     }
     .Contact-btn{
         margin-left: 9%
-    }
+    } */
     .togg-btn{
         margin-top:-22%;position: relative
         }
@@ -244,9 +236,9 @@ ul li a:hover {
 
 .learn-more-text {
     color: #2f88fe;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 50px;
-    padding-top: 70px
+    padding-top: 30px
 }
 
 .arrow-mark {
@@ -390,7 +382,7 @@ ul li a:hover {
 }
 
 .last-row-of-site {
-    background: #0e1d28;
+    background: url("../img/Backgrounds/3.png");
     color: white;
     margin-top: -6px
 }
@@ -449,4 +441,36 @@ ul li a:hover {
     .see-more-btn {
         margin-bottom: 15px
     }
+}
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    /* background-color: #fff; */
+    z-index: 99;
+    text-align: center;
+    pointer-events: none;
+ }
+ 
+ #loading-image {
+   position: absolute;
+   top: 100px;
+   left: 240px;
+   z-index: 100;
+ }
+ i{
+     font-size: 35px;
+     color: dodgerblue;
+ }
+ #anchorTagBottom{
+     color: white;
+     text-decoration: none;
+ }
+ #anchorTagBottom:hover{
+    color: tomato;
+    cursor: pointer;
 }
